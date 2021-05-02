@@ -1,0 +1,15 @@
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  yor-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v2
+      - name: Run yor action
+        uses: bridgecrewio/yor-action@master
+      - name: Commit tag changes
+        uses: stefanzweifel/git-auto-commit-action@v4
