@@ -26,3 +26,7 @@ resource "aws_instance" "my_instance" {
     yor_trace            = "ac588b83-5a00-420e-acf4-6eef5df954d2"
   }
 }
+
+resource "aws_vpc" "yor_vpc" {
+  cidr_block = "10.0.0.0/24"
+}
