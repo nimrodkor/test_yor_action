@@ -29,4 +29,14 @@ resource "aws_instance" "my_instance" {
 
 resource "aws_vpc" "yor_vpc" {
   cidr_block = "10.0.0.0/24"
+  tags = {
+    git_commit           = "7857b1177db538b4ebb634cde248946eb1e50dd1"
+    git_file             = "terraform/main.tf"
+    git_last_modified_at = "2021-05-04 09:17:32"
+    git_last_modified_by = "nimrodkor@gmail.com"
+    git_modifiers        = "nimrodkor"
+    git_org              = "nimrodkor"
+    git_repo             = "test_yor_action"
+    yor_trace            = "ce08589f-1af5-4a85-b113-a2447f5e01e6"
+  }
 }
