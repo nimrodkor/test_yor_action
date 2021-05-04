@@ -12,6 +12,4 @@ jobs:
         with:
           fetch-depth: 0
       - name: Run yor action
-        uses: bridgecrewio/yor-action@commit_changes_by_default
-#      - name: Commit tag changes
-#        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: bridgecrewio/yor-action@main
