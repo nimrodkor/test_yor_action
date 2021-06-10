@@ -54,3 +54,8 @@ resource "aws_security_group" "yor_sg" {
     yor_trace            = "8e830db4-2f81-4cb9-a51d-90a7f8ea30cd"
   }
 }
+
+resource "aws_subnet" "yor_subnet" {
+  cidr_block = "10.0.0.0/28"
+  vpc_id = aws_vpc.yor_vpc.id
+}
