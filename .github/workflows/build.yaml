@@ -1,3 +1,5 @@
+name: Yor
+
 on:
   push:
     branches:
