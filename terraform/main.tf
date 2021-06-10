@@ -40,3 +40,7 @@ resource "aws_vpc" "yor_vpc" {
     yor_trace            = "ce08589f-1af5-4a85-b113-a2447f5e01e6"
   }
 }
+
+resource "aws_security_group" "yor_sg" {
+  vpc_id = aws_vpc.yor_vpc.id
+}
