@@ -43,4 +43,14 @@ resource "aws_vpc" "yor_vpc" {
 
 resource "aws_security_group" "yor_sg" {
   vpc_id = aws_vpc.yor_vpc.id
+  tags = {
+    git_commit           = "e3fa655b91df72e2fdcaa3c917b5a56a39332a86"
+    git_file             = "terraform/main.tf"
+    git_last_modified_at = "2021-06-10 07:51:09"
+    git_last_modified_by = "nimrodkor@gmail.com"
+    git_modifiers        = "nimrodkor"
+    git_org              = "nimrodkor"
+    git_repo             = "test_yor_action"
+    yor_trace            = "8e830db4-2f81-4cb9-a51d-90a7f8ea30cd"
+  }
 }
