@@ -57,5 +57,15 @@ resource "aws_security_group" "yor_sg" {
 
 resource "aws_subnet" "yor_subnet" {
   cidr_block = "10.0.0.0/28"
-  vpc_id = aws_vpc.yor_vpc.id
+  vpc_id     = aws_vpc.yor_vpc.id
+  tags = {
+    git_commit           = "26b834ae7fd8adec0c115c632421d1e6d10d08f1"
+    git_file             = "terraform/main.tf"
+    git_last_modified_at = "2021-06-10 07:54:06"
+    git_last_modified_by = "nimrodkor@gmail.com"
+    git_modifiers        = "nimrodkor"
+    git_org              = "nimrodkor"
+    git_repo             = "test_yor_action"
+    yor_trace            = "fded5bbe-f141-4ee7-bb28-62292ed0435c"
+  }
 }
