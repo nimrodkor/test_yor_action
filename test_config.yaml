@@ -1,0 +1,12 @@
+tag_groups:
+  - name: ownership
+    tags:
+      - name: team
+        value:
+          default: unknown
+          matches:
+            - seceng:
+                tags:
+                  git_modifiers:
+                    - nimrodkor
+                    - nimrod

@@ -15,3 +15,5 @@ jobs:
           fetch-depth: 0
       - name: Run yor action
         uses: bridgecrewio/yor-action@main
+        with:
+          config_file: test_config.yaml
