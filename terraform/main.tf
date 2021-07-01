@@ -9,6 +9,7 @@ resource "aws_s3_bucket" "my_bucket" {
     git_org              = "nimrodkor"
     git_repo             = "test_yor_action"
     yor_trace            = "cd1c3ecc-63bb-4104-a26d-4bfab3461ed1"
+    team                 = "seceng"
   }
 }
 
@@ -24,6 +25,7 @@ resource "aws_instance" "my_instance" {
     git_org              = "nimrodkor"
     git_repo             = "test_yor_action"
     yor_trace            = "ac588b83-5a00-420e-acf4-6eef5df954d2"
+    team                 = "seceng"
   }
 }
 
@@ -38,6 +40,7 @@ resource "aws_vpc" "yor_vpc" {
     git_org              = "nimrodkor"
     git_repo             = "test_yor_action"
     yor_trace            = "ce08589f-1af5-4a85-b113-a2447f5e01e6"
+    team                 = "seceng"
   }
 }
 
@@ -52,6 +55,7 @@ resource "aws_security_group" "yor_sg" {
     git_org              = "nimrodkor"
     git_repo             = "test_yor_action"
     yor_trace            = "8e830db4-2f81-4cb9-a51d-90a7f8ea30cd"
+    team                 = "seceng"
   }
 }
 
@@ -67,5 +71,6 @@ resource "aws_subnet" "yor_subnet" {
     git_org              = "nimrodkor"
     git_repo             = "test_yor_action"
     yor_trace            = "fded5bbe-f141-4ee7-bb28-62292ed0435c"
+    team                 = "seceng"
   }
 }
