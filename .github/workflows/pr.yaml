@@ -1,3 +1,5 @@
+name: PR Test
+
 on:
   pull_request:
 
@@ -6,4 +8,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - uses: bridgecrewio/checkov-action@use_checkov_docker
+      - uses: bridgecrewio/checkov-action@master
