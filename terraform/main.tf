@@ -77,4 +77,15 @@ resource "aws_subnet" "yor_subnet" {
 
 resource "aws_sns_topic" "yor_topic" {
   name_prefix = "test-topic"
+  tags = {
+    git_commit           = "56f3b2d5dcc96680554572a206309cf6b6faa0c8"
+    git_file             = "terraform/main.tf"
+    git_last_modified_at = "2022-01-13 13:09:52"
+    git_last_modified_by = "nimrodkor@gmail.com"
+    git_modifiers        = "nimrodkor"
+    git_org              = "nimrodkor"
+    git_repo             = "test_yor_action"
+    team                 = "seceng"
+    yor_trace            = "dee3a2d3-6802-48df-b830-f8bd2307d41e"
+  }
 }
