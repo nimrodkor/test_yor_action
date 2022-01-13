@@ -74,3 +74,7 @@ resource "aws_subnet" "yor_subnet" {
     team                 = "seceng"
   }
 }
+
+resource "aws_sns_topic" "yor_topic" {
+  name_prefix = "test-topic"
+}

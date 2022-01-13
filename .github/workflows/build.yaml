@@ -15,7 +15,7 @@ jobs:
         with:
           fetch-depth: 0
       - name: Run yor action
-        uses: bridgecrewio/yor-action@main
+        uses: bridgecrewio/yor-action@fix_committing_changes_to_branch
         with:
           config_file: test_config.yaml
           log_level: INFO
